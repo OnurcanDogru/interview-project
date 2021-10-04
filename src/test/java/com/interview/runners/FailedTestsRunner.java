@@ -1,0 +1,15 @@
+package com.interview.runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+
+        glue = "com/interview/step_definitions",
+        features = "@target/rerun.txt"
+)
+
+public class FailedTestsRunner {
+}
